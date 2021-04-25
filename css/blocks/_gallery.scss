@@ -1,0 +1,38 @@
+.gallery {
+	padding-top: 75px;
+	padding-bottom: 100px;
+	.gallery__title {
+		display: flex;
+		justify-content: center;
+		font-size: 1.5rem;
+	}
+
+	.gallery__grid {
+		margin-top: 20px;
+		display: grid;
+		grid-gap: 12px 20px; /* 
+		! Рассчитал в соотношении сторон 10X6 (12 вместо 6, а 20 вместо 10), которое у картинок, что бы они разместились ровно 
+		*/
+		grid-template-columns: repeat(4, 1fr);
+
+		.gallery__img img {
+			max-width: 100%; // Что бы картинки адаптировались
+			&:hover {
+				opacity: .5;
+			}
+		}
+
+		.gallery__img:nth-child(1) {
+			grid-row-start: 1;
+	      grid-row-end: 4;
+	      grid-column-start: 1;
+	      grid-column-end: 4;
+		}	
+
+		.gallery__img:nth-child(11) {
+			// Боллее простой вариант написания
+			grid-row: 5/8; 
+			grid-column: 2/5;
+		}		
+	}
+}

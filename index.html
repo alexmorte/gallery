@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<!-- Sprite -->
+     <svg style="display: none;">
+
+	<symbol id="instagram" viewBox="0 0 448 512">
+		<g>
+			<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+		</g>
+	</symbol>
+
+	<symbol id="facebook" viewBox="0 0 448 512">
+		<g>
+			<path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
+		</g>
+	</symbol>
+
+	<symbol id="twitter" viewBox="0 0 448 512">
+		<g>
+			<path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
+		</g>
+	</symbol>
+
+	<symbol id="telegram" viewBox="0 0 496 512">
+		<g>
+			<path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+		</g>
+	</symbol>
+
+	<symbol id="youtube" viewBox="0 0 576 512">
+		<g>
+			<path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+		</g>
+	</symbol>
+
+	<symbol id="vk" viewBox="0 0 576 512">
+		<g>
+			<path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path>
+		</g>
+	</symbol>
+
+	<symbol id="envelope" viewBox="0 0 512 512">
+		<g>
+			<path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+		</g>
+	</symbol>
+
+     </svg>
+   <!-- -------------- -->
+	
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">Backendless</div>
+
+				<form class="form">
+					<input class="form__input" checked type="radio" id="lightThemeInput" name="theme" value="light-theme">
+					<label for="lightThemeInput">Light Theme</label>
+
+					<input class="form__input" type="radio" id="darkThemeInput" name="theme" value="dark-theme">
+					<label for="darkThemeInput">Dark Theme</label>
+
+					<input class="form__input" type="radio" id="backendlessThemeInput" name="theme" value="backendless-theme">
+					<label for="backendlessThemeInput">Backendless Theme</label>
+				</form>
+
+				<div class="btn">
+					<button class="btn__item" id="button1">Light Theme</button>
+					<button class="btn__item" id="button2">Dark Theme</button>
+					<button class="btn__item" id="button3">Backendless Theme</button>
+				</div>
+
+				<div class="select">
+					<div class="select__header">
+						<span class="select__current">Light Theme</span>
+					</div>
+					<div class="select__body">
+						<div class="select__item" id="selectLightTheme">Light Theme</div>
+						<div class="select__item" id="selectDarkTheme">Dark Theme</div>
+						<div class="select__item" id="selectBackendlessTheme">Backendless Theme</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="gallery">
+		<div class="container">
+			<h2 class="gallery__title">Backendless Gallery</h2>
+			<div class="gallery__grid">
+				<a href="#" class="gallery__img" id="galleryImg1"><img src="http://placehold.it/1000x600/8CCB5E/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg2"><img src="http://placehold.it/1000x600/AB274F/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg3"><img src="http://placehold.it/1000x600/FFCF40/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg4"><img src="http://placehold.it/1000x600/2A8D9C/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg5"><img src="http://placehold.it/1000x600/DD80CC/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg6"><img src="http://placehold.it/1000x600/0095B6/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg7"><img src="http://placehold.it/1000x600/712F26/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg8"><img src="http://placehold.it/1000x600/1164B4/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg9"><img src="http://placehold.it/1000x600/507D2A/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg10"><img src="http://placehold.it/1000x600/CD5700/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg11"><img src="http://placehold.it/1000x600/4169E1/fff" alt=""></a>
+				<a href="#" class="gallery__img" id="galleryImg12"><img src="http://placehold.it/1000x600/D95030/fff" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Появляющееся большое фото при клике на его превью -->
+	<a href="#" class="lightbox" id="lightbox1"><span style="background-image: url(http://placehold.it/1000x600/8CCB5E/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox2"><span style="background-image: url(http://placehold.it/1000x600/AB274F/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox3"><span style="background-image: url(http://placehold.it/1000x600/FFCF40/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox4"><span style="background-image: url(http://placehold.it/1000x600/2A8D9C/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox5"><span style="background-image: url(http://placehold.it/1000x600/DD80CC/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox6"><span style="background-image: url(http://placehold.it/1000x600/0095B6/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox7"><span style="background-image: url(http://placehold.it/1000x600/712F26/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox8"><span style="background-image: url(http://placehold.it/1000x600/1164B4/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox9"><span style="background-image: url(http://placehold.it/1000x600/507D2A/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox10"><span style="background-image: url(http://placehold.it/1000x600/CD5700/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox11"><span style="background-image: url(http://placehold.it/1000x600/4169E1/fff);">Big image</span></a>
+	<a href="#" class="lightbox" id="lightbox12"><span style="background-image: url(http://placehold.it/1000x600/D95030/fff);">Big image</span></a>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__item">
+					<a href="https://backendless.com/" class="footer__link" id="link">Backendless.com</a>
+					<a href="#" class="footer__link" id="link">555-555-555</a>
+				</div>
+				<div class="social">
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon instagram">
+							<use xlink:href="#instagram"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon facebook">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon twitter">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon">
+							<use xlink:href="#telegram"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon">
+							<use xlink:href="#youtube"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon">
+							<use xlink:href="#vk"></use>
+						</svg>
+					</a>
+					<a href="#" class="social__item" id="link">
+						<svg class="social__icon">
+							<use xlink:href="#envelope"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/app.js"></script>
+	<script src="js/lightbox.js"></script>
+</body>
+
+</html>

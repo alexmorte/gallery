@@ -1,0 +1,32 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 1rem;
+	background-color: $blue;
+	box-shadow: 0 3px rgba($color: rgb(211, 209, 209), $alpha: 1.0);
+	.header__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	   height: 50px;
+		.header__logo {
+			font-size: 1.5rem;
+		}
+	}	
+}
+
+.headerDark {
+	background-color: $black;
+	.select {
+		color: $black;
+	}
+}
+
+.headerBackendless {
+	background-color: $green;
+	.select {
+		color: $black;
+	}
+}

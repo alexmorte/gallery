@@ -1,0 +1,38 @@
+.select {
+	display: none;
+	position: relative;
+	width: 150px;
+	.select__header {
+		display: flex;
+		border: 1px solid $black;
+		cursor: pointer;
+		background-color: $white;
+		.select__current {
+			font-size: 1rem;
+			padding: 5px;
+		}
+	}
+	.select__body {
+		display: none;
+		border: 1px solid $black;
+		border-top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		.select__item {
+			padding: 5px;
+			font-size: 1rem;
+			cursor: pointer;
+			background-color: $white;
+			transition: .2s linear;
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+}
+
+/* При добавлении класа "select-active" к "select" применяються следующие свойства для "select__body" */
+.select-active .select__body { 
+	display: block;
+}
